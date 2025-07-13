@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--webpage adapts to device size-->
     <title>Ryandeep's Resume</title>
+    <style>
+    myskills{
+      display: block;
+      border: 1px solid gray;
+      padding: 10px;
+      margin: 1rem 0;
+    }
+  </style>
+  
 </head>
 <body>
     <header>
@@ -40,13 +49,22 @@
         </article>
         <article>
             <section>
+                <myskills>
                 <h2>Skills</h2>
-                <ul>
-                    <li>HTML,CSS,JavaScript,SQL, MySQL, Jest, Puppeteer, Markdown</li>
-                    <li>C/C++,Java,Python</li>
-                </ul>
+                <dl>
+                <dt>Frontend & Testing</dt>
+                <dd>HTML, CSS, JavaScript, Jest, Puppeteer, Markdown</dd>
+
+                <dt>Databases</dt>
+                <dd>SQL, MySQL</dd>
+
+                <dt>Programming Languages</dt>
+                <dd>C, C++, Java, Python</dd>
+                </dl>
+                </myskills>
             </section>
         </article>
+
         <article>
             <section>
                 <h2>Projects</h2>
@@ -85,6 +103,15 @@
     </main>
 
     <footer>
+
+        <button disabled></button>>View Resume</button>
+
+        <dialog id="resumeDialog">
+            <h2>My Resume</h2>
+            <p>Click below to view or download:</p>
+            <a href="resume.pdf" target="_blank">Open PDF</a><br><br>
+            <button disabled>Close</button>
+        </dialog>
 
         <br>
         <p>&copy; 2025 Ryandeep Shelopal</p>

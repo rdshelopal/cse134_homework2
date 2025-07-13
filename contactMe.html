@@ -35,7 +35,51 @@
             </div>
 
         </form>
+        <form>
+            <fieldset>
+                <legend><kbd>Choose Your Favorite Language</kbd></legend>
+
+               <!-- Fixed dropdown -->
+                <label for="lang-select">From a dropdown:</label><br>
+                <select id="lang-select" name="language">
+                <optgroup label="Frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </optgroup>
+
+                <optgroup label="Backend">
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c++">C++</option>
+                </optgroup>
+                </select><br><br>
+
+
+                <!-- Flexible input with suggestions -->
+                <label for="lang-input">Or type one:</label><br>
+                <input list="lang-options" id="lang-input" name="language-typed">
+                <datalist id="lang-options">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="C++">
+                </datalist>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>     
     </main>
+    <footer>
+        <br>
+        <address>
+                Ryandeep Shelopal<br>
+                rdshelopal@email.com<br>
+                San Diego, CA
+            </address>
+        <p>&copy; 2025 Ryandeep Shelopal</p>
+    </footer>
     
 </body>
 </html>
